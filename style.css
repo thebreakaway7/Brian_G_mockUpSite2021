@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+:root{
+    --green: #10504F;
+    --main-font: 'Lato', sans-serif;
+    --alt-font: 'Pacifico', cursive;;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+h2{
+    font-family: var(--alt-font);
+}
+.gradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+}
+.thumbnail{
+    border: 0;
+    box-shadow: none;
+}
+#top-nav .top-bar, #top-nav .top-bar ul{
+    background-color: var(--green);
+}
+#top-nav .title-bar{
+    background-color: var(--green);
+}
+#top-menu .menu{
+    margin: 0 auto;
+}
+#top-menu .menu li{
+    display: grid;
+}
+#top-menu .menu a{
+    align-self: center;
+    color: #fff;
+}
+.orbit-container{
+    height: 50vh !important;
+}
+.orbit-slide{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+@media (max-width:640px){
+    .orbit-container{
+        height: 30vh !important;
+    }
+    .orbit-slide{
+        background-position: right;
+    }
+}
+.orbit-caption{
+    background-color: transparent;
+    top: 60%;
+    left: 20%;
+    transform: translate(-20%, -60%);
+    width: 50%;
+}
+@media (max-width:640px){
+    .orbit-caption{
+        top: 50%;
+        transform: translate(-20%, -50%);
+    }
+}
+.orbit-caption a{
+    background-color: black;
+    color: #fff;
+    padding: 10px 25px;
+}
+.orbit-bullets{
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.orbit-bullets button{
+    border-radius: 0;
+    opacity: .8;
+}
+.orbit-bullets button.is-active{
+    background-color: #fff;
+    opacity: 1;
+}
+.cell{
+    position: relative;
+}
+#sectionOne {
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+#sectionOne .button.expanded{
+    position: absolute;
+    bottom: 0;
+    padding: 1.5em 1em;
+    background-color: var(--green);
+    font-size: 22px;
+}
+@media (max-width:640px){
+    #sectionOne .button.expanded{
+        padding: 1em 1em;
+    }
+    #sectionOne .cell:nth-child(3) {
+        width: calc(100% - 1.25rem);
+    }
+    #sectionOne .cell:nth-child(3) img{
+        width: 100%;
+    }
+}
+#sectionTwo .cell{
+    text-align: center;
+}
+
+#sectionTwo h5{
+    margin-bottom: 0;
+}
+#sectionTwo .button.hollow{
+    border: none;
+    color: var(--green);
+    font-family: var(--alt-font);
+    font-size: 20px;
+}
+.wrap-full{
+    height: 500px;
+    background-image: url('./assets/Hero%20Image%202.jpg');
+    background-color: pink;
+    background-size: cover;
+    background-position: left;
+    position: relative;
+}
+#sectionThree{
+    color: #fff;
+}
+#sectionThree p{
+    font-size: 30px;
+    font-weight: 100;
+}
+#sectionThree a{
+    background-color: var(--green);
+    color: #fff;
+    padding: 10px 25px;
+}
+.caption-full{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translate(-10%, -50%);
+}
+.email{
+    background-color: var(--green);
+    color: #fff;
+    padding: 4em 0;
+}
+.email h2{
+    text-align: center;
+    padding-bottom: 1em;
+}
+.email .email-text{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.email .email-text p{
+    width: 50%;
+}
+.email form{
+    display: flex;
+    width: 50%;
+    padding-left: 2em;
+    align-self: flex-start;
+}
+@media(max-width:640px){
+    .email .email-text p{
+        width: 100%;
+    }
+    .email form{
+        width: 100%;
+        padding-left: 0;
+    }
+}
+.email form input{
+    margin: 0;
+}
+.email form button{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    margin-left: 2em;
+    color: #fff;
+}
+#footer.callout{
+    background-color: black;
+    color: #fff;
+}
+#footer.callout a{
+    color: #fff;
+}
